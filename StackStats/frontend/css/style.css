@@ -6,7 +6,7 @@
 body {
     display: flex;
     flex-direction: column;
-    background-color:aliceblue;
+    background-color:rgb(155, 176, 161);
 }
 
 header {
@@ -16,7 +16,7 @@ header {
 
 .logo {
     padding-left: 50px;
-    color: #5f9ea0;
+    color: aliceblue;
 }
 
 nav {
@@ -31,8 +31,9 @@ nav ul li{
     font-family: "Poppins", sans-serif;
     margin-right: 20px;
 }
+
 nav ul li a {
-    color: #5f9ea0;
+    color: aliceblue;
     text-decoration: none;
     transition: color ease 0.5s;
 }
@@ -42,24 +43,73 @@ nav ul li a:hover {
 }
 
 .footer {
-    position: absolute;
+    position: fixed;
     bottom: 0;
     width: 100%;
-    display: flex;
+    display: absolute;
     justify-content: center;
-    margin-bottom: 20px;
+    margin-top: -180px;
     text-align: center;
+}
+.box {
+    display: flex;
+    flex-direction: column;
+}
+
+.box1 {
+    display: flex;
+    flex-direction: row;
+}
+
+.box2 {
+    display: flex;
+    flex-direction: column;
 }
 
 .container {
-    display: flex;
-    margin: 0 200px;
-    min-width: 640px;
-    max-width: 1000px;
-    background: rgba( 255, 255, 255, 0.15 );
+    margin: -10px 20px 20px 10px;
+    color: aliceblue;
+    max-width: 2000px;
+    min-height: 75px;
+    max-height: 500px;
+    background: rgb(6, 60, 55);
     box-shadow: 0 9px 20px 0 rgba( 31, 38, 135, 0.3 );
     /* -webkit-backdrop-filter: blur( 3px ); */
-    border-radius: 10px;
+    border-radius: 15px;
     border: 1px solid rgba( 255, 255, 255, 0.18 );
     padding: 20px;
+}
+
+.tracker {
+    margin: 0px 0px 20px 10px;
+    position: relative;
+    min-width: 790px;
+    min-height: 300px;
+    box-shadow: 0 9px 20px 0 rgba( 31, 38, 135, 0.3 );
+    /* -webkit-backdrop-filter: blur( 3px ); */
+    border-radius: 15px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 20px;
+    column-span: 2;
+}
+
+
+.hh {
+    margin: 0px 0px 10px 20px;
+    position: relative;
+    min-width: 500px;
+    max-width: 750px;
+    /* min-height: 300px; */
+    max-height: 660px;
+    box-shadow: 0 9px 20px 0 rgba( 31, 38, 135, 0.3 );
+    /* -webkit-backdrop-filter: blur( 3px ); */
+    border-radius: 15px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+    padding: 20px;
+    column-span: 1;
+}
+
+.bottom {
+    justify-content: center;
+    text-align: center;
 }
